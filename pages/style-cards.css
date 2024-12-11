@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.genre-description {
+  font-family: "Poppins";
+  display: inline-block;
+  background-color: #e0b1cb;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 2px 5px 2px 0px;
+  text-align: start;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: start;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023e7d;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-family: "Poppins";
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  
+}
+
+.card-button:hover {
+  background-color: #0353a4;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS untuk rating bintang */
+.card-rating {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 1.5rem; /* Ukuran bintang */
+  color: gold; /* Warna bintang */
+}

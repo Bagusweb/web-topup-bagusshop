@@ -1,0 +1,56 @@
+<!-- ini untuk login page -->
+
+
+
+
+<!-- ini login form -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/photos/logo.png" />
+    <title>Form Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  
+  </head>
+  <body>
+    <div id="register-page" class="container">
+      <div class="register-container">
+        <div class="logo-img">
+        </div>
+        <h2>Register</h2>
+        
+        <form id="registerForm" onsubmit="register(); return false;">
+          <div class="input-group">
+            <label for="email-register">Email:</label>
+            <input type="email" id="email-register" name="email-register" required />
+          </div>
+          <div class="input-group">
+            <label for="password-register">Password:</label>
+            <input type="password" id="password-register" name="password-register" required />
+          </div>         
+          <div class="input-group">
+            <label for="konfirmasi-password-register">Konfirmasi Password:</label>
+            <input type="password" id="konfirmasi-password-register" name="konfirmasi-password-register" required />
+          </div>         
+    
+         
+          <a href="login.html" class="forgot-password">Sudah punya akun?</a>
+          <div class="input-group">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <audio id="loginPageAudio" autoplay>
+      <source src="assets/audios/Percussion Full.mp3" type="audio/mp3">
+      <source src="assets/audios/Percussion Full.wav" type="audio/wav">
+    </audio>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/auth.js"></script> 
+  </body>
+</html>
+<!-- login form end -->

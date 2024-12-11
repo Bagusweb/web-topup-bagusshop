@@ -1,0 +1,48 @@
+<!-- ini login form -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="photos/logo.png" />
+    <title>Form Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="login-page" class="container">
+      <div class="login-container">
+        <div class="logo-img">
+        </div>
+        <h2>Login</h2>
+        <form id="myForm" onsubmit="login(); return false;">
+          <div class="input-group">
+            <label for="email-login">Email:</label>
+            <input type="email" id="email-login" name="email-login" required />
+          </div>
+          <div class="input-group">
+            <label for="password-login">Password:</label>
+            <input type="password" id="password-login" name="password-login" required />
+          </div>
+          <a href="register.html" class="forgot-password">Belum punya akun?</a>
+          <div class="input-group">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+        <div class="google-login">
+          <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-586960051%3A1695717102667901&theme=glif">
+            <img src="assets/photos/logogoogle.png" alt="Login dengan Google" /> Masuk dengan Google
+          </a>
+        </div>
+      </div>
+    </div>
+    <audio id="loginPageAudio" autoplay>
+      <source src="assets/audios/Percussion Full.mp3" type="audio/mp3">
+      <source src="assets/audios/Percussion Full.wav" type="audio/wav">
+    </audio>
+    
+    <script src="assets/js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
+<!-- login form end -->

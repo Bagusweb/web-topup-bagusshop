@@ -1,0 +1,87 @@
+.box-id {
+    width: 800px;
+    height: 250px;
+    background-color: #caf0f8;
+    margin: 40px auto;
+    border-radius: 40px;
+    position: relative;
+    z-index: 2;
+}
+.nomor {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+}
+.btn, .btn-success {
+    margin-left: 30px;
+}
+.isi-box-id {
+    width: 800px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 0 0 40px 40px;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    position: absolute;
+    top: 128px;
+    z-index: 2;
+}
+.form-control {
+    display: block;
+    width: 36%;
+    border-radius: 40px;
+    margin: 8px 0px 8px 28px;
+    float: left;
+}
+.add-control {
+    float: right;
+    display: block;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    border-radius: 24px;
+    padding: 0 30px;
+    margin: 8px 60px 4px 0px ;
+    font-size: 24px;
+}
+.add-control:hover {
+    background-color: green;
+    color: white;
+}
+.box-id h1 {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.p1 {
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    left: 40px;
+}
+.p2 {
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    left: 350px;
+}
+.clear {
+    clear: both;
+}
+#listPlayer {
+    margin: 6px 0;
+}

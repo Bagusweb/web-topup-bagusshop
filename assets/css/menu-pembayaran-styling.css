@@ -1,0 +1,110 @@
+.box-menu-pembayaran {
+    width: 800px;
+    /* height: 240px; */
+    height: 750px;
+    background-color: #caf0f8;
+    margin: 40px auto;
+    border-radius: 40px;
+    position: relative;
+    z-index: 4;
+}
+.nomor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+    top: -20px;
+    left: 35px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 4;
+}
+.box-menu-pembayaran h1 {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.box-isi-pembayaran {
+    width: 770px;
+    height: 100px;
+    /* margin: auto; */
+    margin: 30px auto;
+    background-color: aliceblue;
+    border-radius: 12px;
+    border: 1px solid green;
+    position: relative;
+    z-index: 4;
+}
+.radio-pembayaran {
+    /* margin: 30px 0 30px 30px; */
+    /* opacity: 0; */
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 4;
+}
+.radio-label {
+    background-color: white;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    /* border-radius: 100%; */
+    border-radius: 50%;
+    cursor: pointer;
+    top: 28px;
+    left: 44px;
+    /* border: 2px solid black; */
+    z-index: 4;
+
+}
+.radio-label:hover {
+    background-color: lightgreen;
+}
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: none;
+    z-index: 4; 
+}
+.radio-pembayaran:checked ~ .checkmark::after {
+    display: block;
+}
+.logo img {
+    width: 120px;
+    height: 80px;
+    margin: 0 30px;
+    position: absolute;
+    left: 70px;
+    z-index: 4;
+}
+.jumlah-harga {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px 40px;
+    position: absolute;
+    right: 10px;
+    z-index: 4;
+}
+.bawah-box-pembayaran {
+    width: 770px;
+    height: 24px;
+    background-color: blue;
+    position: absolute;
+    top: 74px;
+    border-radius: 0 0 12px 12px;
+    color: white;;
+    font-size: 16px;
+    text-align: center;
+    z-index: 4;
+}

@@ -1,0 +1,208 @@
+
+/* css index */
+.container-raffi {
+    height: auto;
+    background-color: #00b4d8;
+    margin: 0;
+}
+ul {
+    margin: auto;  
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.centered-list {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Rata tengahkan teks */
+}
+
+.centered-list li {
+  margin: 10px 0; /* Atur margin atas dan bawah sesuai keinginan Anda */
+  display: inline-block;
+}
+
+.navbar-brand-raffi h1{
+    font-size: 30px;
+    float: right;
+    color: black;
+    padding-left: 20px;
+}
+.login-raffi {
+    background-color: #0077b6;
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    margin: 1px 10px;
+}
+section h2 {
+    text-align: center;
+    border: 3px solid orange;
+    background-color: antiquewhite;
+    width: 200px;
+    margin: 10px auto 0;
+}
+.menu-slider-raffi {
+    width: 900px;
+    height: auto;
+    background-color: lightcyan;
+    margin: 0 auto;
+    position: relative;
+
+}
+.menu-popular-raffi {
+    width: 900px;
+    height: 300px;
+    background-color: lightcyan;
+    margin: 0 auto;
+}
+.menu-mobile-raffi {
+    width: 900px;
+    height: 300px;
+    background-color: lightcyan;
+    margin: 0 auto;
+}
+.menu-pc-raffi {
+    width: 900px;
+    height: 300px;
+    background-color: lightcyan;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+footer {
+    width: auto;
+    height: 200px;
+    background-color: #caf0f8;
+    text-align: center;
+}
+footer h2 {
+    padding-top: 16px;
+}
+footer p {
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo-footer-raffi {
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+}
+/* css index end */
+/* ini css login form */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6f6;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  .register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .google-login {
+    text-align: center;
+  }
+  
+  .google-login img {
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+/* css login form end  */
+
+.swal2-popup {
+  font-family: 'Arial', sans-serif; /* Ganti 'Arial' dengan font pilihan Anda */
+}
+
+#login-page {
+  background-image: url(../photos/bg-login2.jpg);
+  background-size: cover;
+}
+
+#register-page {
+  background-image: url(../photos/bg-login2.jpg);
+  background-size: cover;
+}
+
+
+.logo-img {
+
+  display: flex;
+  margin-left: 30%;
+  margin-bottom: 0px;
+  width: 50%;
+  height: 100px;
+  background-image: url(../photos/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

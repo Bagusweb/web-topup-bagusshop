@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/photos/logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style2.css" />
+
+    <title>Bagus Shop</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bagus<img src="assets/photos/logo.png" width="48" height="48">Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a class="nav-link" href="#" style="font-weight: 400;">Beranda</a>
+            <a class="nav-link" href="#kategori" style="font-weight: 400;">Kategori</a>
+            <a class="nav-link" href="#populer" style="font-weight: 400;">Populer</a>
+            <!-- <a class="nav-link" href="#">Products</a> -->
+            <a class="nav-link" href="#testimoni" style="font-weight: 400;">Testimoni</a>
+            <!-- <a class="nav-link" href="#">Contact</a> -->
+          </div>
+          <div class="icons mt-4 mt-sm-0 text-center" id="user-status">
+            <!-- <i class="bx bx-cart me-5 position-relative">
+              <div class="badge bg-danger rounded-pill position-absolute">
+                3
+              </div>
+            </i> -->
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Start -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 content-left">
+            <p class="label" style="color: white;">Top Up Termurah </p>
+            <h1 class="heading" style="color: white;">Cuman Ada Di Sini</h1>
+            <p class="subheading" style="color: white;">
+              Tingkatkan pengalaman bermain game Anda dengan mudah dan aman di website e-commerce kami. Temukan dan beli top-up game favorit Anda dalam hitungan detik. Kami menyediakan berbagai pilihan game top-up untuk memenuhi kebutuhan gaming Anda. Cepat, andal, dan terpercaya - bermain game belum pernah semudah ini. Bergabunglah dengan komunitas gamer kami dan rasakan perbedaannya sekarang.
+            </p>
+            
+            <div class="btn-home">
+              <a href="#games" class="btn btn-light px-sm-3 py-sm-2 px-5 py-2" style="border-radius: 8px;"
+              >Explore</a
+              >
+              <!-- <a
+              href="#"
+              class="btn btn-contact px-sm-4 py-sm-3 ms-4 ms-sm-5 px-4 py-2"
+              >Contact Us</a
+              > -->
+            </div>
+          </div>
+          <div class="col-lg-7 content-right">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+    
+                    <img src="assets/photos/bannerC/bannerPUBG.jpg" class="d-flex" style="width: 30vw; height: 40vh; border-radius: 20px;" alt="...">
+                 
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/photos/bannerC/bannerML.png" class="d-flex" style="width: 30vw; height: 40vh; border-radius: 20px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/photos/bannerC/bannerDOTA.jpg" class="d-flex" style="width: 30vw; height: 40vh; border-radius: 20px;" alt="...">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home End -->
+
+    <!-- About Start -->
+    <section class="about section-margin" id="games">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="input-group border rounded-pill p-2">
+              <input type="text" id="searchGameInput" class="form-control border-0" placeholder="Cari game..." style="border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-right: none; border-width: 2px;">
+              <div class="input-group-append">
+                <div class="btn btn-primary" style="border-radius: 20px; width: 100px; border-width: 2px;" onclick="showGames(null)">
+                  Cari
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1">
+            <div class="btn-group dropdown">
+              <button type="button" style="width: 100px; height: 40px; border-radius: 20px;" class="btn btn-dark dropdown-toggle mt-2" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                Genre
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><div class="dropdown-item" type="button" onclick="showGames(1)">Battle Royale</div></li>
+                <li><div class="dropdown-item" type="button" onclick="showGames(2)">Moba</div></li>
+                <li><div class="dropdown-item" type="button" onclick="showGames(3)">Multiplayer Online Sandbox</div></li>
+                <li><div class="dropdown-item" type="button" onclick="showGames(4)">Multiplayer Party Knockout Game</div></li>
+                <li><div class="dropdown-item" type="button" onclick="showGames(5)">Online Multiplayer Strategy Game</div></li>
+                <li><div class="dropdown-item" type="button" onclick="showGames(6)">Open World Game</div></li>
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row justify-content-center" style="margin-top: 80px;"  id="gamelists">
+          <!-- <div class="col-lg-3 mb-4">
+            <a href="#" class="gamelists-link">
+              
+              <div class="card-arvi">
+                  <img src="assets/photos/games/genshin.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h6 class="card-title" style="font-weight: bold; font-size: 24px;">Genshin Impact</h6>
+                      <div class="d-flex">
+                          <span class="badge badge-pill discount-precentage">Open World</span>
+                          <span class="badge badge-pill discount-price"></span>
+                      </div>
+                      <p class="mt-1 mb-0" style="font-size: 14px;">Start From:</p>
+                      <h5 class="mt-1" style="font-weight: bold;">Rp 4.000 <span style="font-size: 12px; color: #989898;">/10 diamonds</span> </h5>
+                      <div class="d-flex align-items-center">
+                          <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                          <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                          <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                          <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                          <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                          <span style="color: #989898;">(972)</span>
+                      </div>
+                  </div>
+              </div>
+            </a>
+         
+          </div> -->
+          
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Service start -->
+    <section class="service section-margin pb-4" id="kategori">
+      <div class="container">
+        <div class="row row-title text-center">
+          <div class="col-lg-7 mx-auto">
+            <!-- <p class="label">Kategori Game</p> -->
+            <h3 class="heading-section" style="color: white;">
+              Kategori Game
+            </h3>
+          </div>
+        </div>
+        <div class="row row-content justify-content-center" id="section-gamecategory-lists">
+         
+          <!-- <div class="col-lg-4 col-md-6 mt-4 mt-md-0 mb-4">
+            <div class="card-service d-flex align-items-center">
+              <img src="./assets/photos/mlbb.jpg" class="img-fluid img-section-gamelists" alt="" />
+              <div class="detail">
+                <h5>Open World</h5>
+              </div>
+            </div>
+          </div> -->
+        
+        </div>
+      </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- Product Start -->
+    <section class="product section-margin" id="populer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="heading-section" style="color: #053a77;">GAMES POPULER</h1>
+          </div>
+          <div class="col-lg-6 text-end toggle-slider mt-4 mt-md-0">
+            <i class="bx bxs-chevron-left-circle me-2"></i>
+            <i class="bx bxs-chevron-right-circle"></i>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <!-- Swiper -->
+            <div class="swiper mySwiperProduct">
+              <div class="swiper-wrapper" id="section-games-promo">
+                
+            
+                <!-- <div class="swiper-slide position-relative card-holder">
+                  <div class="card-arvi">
+                      <img src="assets/photos/games/genshin.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h6 class="card-title">Genshin Impact</h6>
+                          <div class="d-flex">
+                              <span class="badge badge-pill discount-precentage">Open World</span>
+                              <span class="badge badge-pill discount-price"></span>
+                          </div>
+                          <p class="mt-1 mb-0" style="font-size: 14px;">Start From:</p>
+                          <h5 class="mt-1" style="font-weight: bold;">Rp 4.000 <span style="font-size: 12px; color: #989898;">/10 diamonds</span> </h5>
+                          <div class="d-flex align-items-center">
+                              <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                              <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                              <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                              <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                              <img class="star-rating" src="assets/photos/icon-bintang.png" alt="">
+                              <span style="color: #989898;">(972)</span>
+                          </div>
+                      </div>
+                  </div>
+                </div> -->
+             
+               
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product End -->
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <a href="#">
+              <img src="" class="img-fluid" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Start-->
+    <section class="testimoni pb-3" id="testimoni">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3 class="heading-section">Testimoni</h3>
+          </div>
+        </div>
+        <div class="row row-content" style="margin-top: 40px; margin-bottom: 20px;">
+          <div class="col-12">
+            <!-- Swiper -->
+            <div class="swiper mySwiperTesti">
+              <div class="swiper-wrapper" id="section-testimonials">
+                <!-- <div class="swiper-slide card text-center py-2">
+                  <img
+                    src=""
+                    class="img-user mx-auto"
+                    alt=""
+                  />
+                  <p class="name mb-0 mt-2 fw-bold">Leslie Alexander</p>
+                  <p class="address">Malang, East Java</p>
+                  <div class="card-body px-5 py-4 position-relative mx-auto">
+                    <i
+                      class="bx bxs-quote-left position-absolute top-0 start-0"
+                    ></i>
+                    <i
+                      class="bx bxs-quote-right position-absolute bottom-0 end-0"
+                    ></i>
+                    <p class="testi-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Pariatur aliquam perferendis reiciendis ab in nulla?
+                    </p>
+                  </div>
+                </div> -->
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimoni End -->
+
+    <!-- Contact Start -->
+    <!-- <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="label">CONTACT</p>
+            <h3 class="heading-section">We will serve you any time</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5">
+            <img src="" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-6 offset-md-1 mt-4 mt-sm-0">
+            <form action="#">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" class="form-control" />
+              </div>
+              <div class="form-group mt-2">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-2">
+                <label for="message">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button class="btn btn-success mt-3" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-lg-3 col-md-4 column">
+            <h1 class="logo mb-3">Bagus<img src="assets/photos/logo.png" width="48" height="48">Shop</h1>
+            <a href="#" class="email">laptopbagus139@gmail.com</a>
+            
+            <div class="sosmed mt-3">
+              <a href="https://github.com/bagusweb"><i class="bx bxl-github"></i></a>
+              <a href="https://www.instagram.com/lanzzz.20/"><i class="bx bxl-instagram ms-2"></i></a>
+              <a href="https://www.tiktok.com/@lanzstore20"><i class="bx bxl-tiktok ms-2"></i></a>
+            </div>
+          </div>
+          <div class= "col-lg-2 col-md-3 offset-md-2 mt-3 mt-sm-0 column justify-content-center">
+            <h3>Information</h3>
+            <ul style="color: white;">
+              <li>Office Hours</li>
+              <li>Requirements</li>
+              <li>About us</li>
+            </u>
+          </div>
+          <div class="col-lg-5 col-md-3 mt-3 mt-sm-0 column text-end">
+            <h3>Kategori Game</h3>
+            <ul  class="centered-list" style="color: white;">
+              <li >Battle Royal</li>
+              <li>MOBA</li>
+              <li>Sandbox</li>
+              <li>Open World</li>
+              <li>Multiplayer</li>
+            </ul>
+          </div>
+          <!-- <div class="col-lg-2 col-md-3 mt-md-4 mt-md-0 mt-3 mt-lg-0 column">
+            <h3>Helpfull Link</h3>
+            <ul>
+              <li>Service</li>
+              <li>Support</li>
+              <li>Terms & Condition</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div> -->
+          <!-- <div class="col-lg-2 col-md-3 mt-md-4 mt-md-0 mt-3 mt-lg-0 column">
+            <h3>Address</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <a href="#" class="maps">Google Maps</a>
+          </div> -->
+        </div>
+        <div class="row text-center">
+          <div class="col-12">
+
+            <p class="copy" style="color: white;">
+              &copy;Copyright 2024 Bagus Shop | Built by
+
+              <a href="#">Bagus</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Inisialisasi carousel
+      var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+          interval: 5000, // Durasi setiap slide dalam milidetik
+          wrap: true // Mengaktifkan pengulangan
+      });
+  </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/script2.js"></script>
+    <script src="assets/js/auth.js"></script>
+
+     <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('searchButton').addEventListener('click', function() {
+                let keyword = document.getElementById('searchInput').value;
+                showGames(null, keyword);
+            });
+        });
+    </script> -->
+</html>
+
+
+
+<!-- <div class="btn-group dropdown">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+    Genre
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item" type="button">MOBA</button></li>
+    <li><button class="dropdown-item" type="button">FPS</button></li>
+    <li><button class="dropdown-item" type="button">MMORPG</button></li>
+  </ul>
+</div> -->
+
+<!-- .btn-group {
+  font-family: 'Poppins';
+
+}
+
+.dropdown-menu {
+  font-family: 'Poppins';
+} -->

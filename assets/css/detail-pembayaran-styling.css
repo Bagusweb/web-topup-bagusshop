@@ -1,0 +1,73 @@
+.box-detail-pembayaran {
+    width: 800px;
+    height: 300px;
+    background-color: #caf0f8;
+    margin: 40px auto;
+    border-radius: 40px;
+    position: relative;
+    z-index: 3;
+}
+.nomor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+    top: -20px;
+    left: 35px;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: bold;
+    z-index: 3;
+}
+.box-detail-pembayaran h1 {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.box-detail-pembayaran p {
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: -18px;
+    font-size: 16px;
+}
+.email-control {
+    display: block;
+    width: 88%;
+    border-radius: 8px;
+    margin: 0 30px;
+    padding: 14px;
+    float: left;
+}
+.clear {
+    clear: left;
+}
+.detail-akhir {
+    padding: 20px 36px 30px;
+    font-size: 16px;
+}
+.harga {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 36px 10px;
+}
+.buy-control {
+    float: right;
+    display: block;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 10px 80px;
+    margin-top: 28px;
+    margin-right: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buy-control:hover {
+    background-color: white;
+    color: green;
+}
